@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <!-- start section -->
+    <div id="start">
+      <div id="start-container">
+        <h1>Coding Quiz Challenge</h3>
+        <p>Try to answer the following code-related questions within the time <br>
+        limit. Keep in mind that incorrect answers will penalise your score time <br>
+        by 5 seconds. </p>
+        <!-- this button will start the quiz -->
+        <button id="start-button">Start</button>
+      </div></div>
+    </div>
+    <!-- quiz section -->
+    <div id="quiz">
+
+      <div id="quiz-header">
+        <h1>Quiz Game</h1>
+        <h2 id="result"></h2>
+        <h2 id="score">Score: 0</h2>
+        <h2 id="timer">Time: 0</h2>
+      </div>
+
+      <div id="quiz-body">
+        <h3 id="question"></h3>
+        <ul id="choices">
+          <!-- user choice buttons -->
+          <li><button class="choice"></button></li>
+          <li><button class="choice"></button></li>
+          <li><button class="choice"></button></li>
+          <li><button class="choice"></button></li>
+        </ul>
+      </div>
+        
+    </div>
+    <!-- game over section -->
+    <div id="game-over">
+      <h1>All Done!</h1>
+      <h2>Your Score: <span id="final-score"></span></h2>
+      <!-- form will take user initials input an match it with their high score in the script -->
+      <form id="high-score-form">
+        <label for="initials">Enter your initials here:</label>
+        <input type="text" id="initials" name="initials" required minlength="2" maxlength="3">
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </div>
+    <!-- high score section -->
+    <div id="high-score">
+      <h1>High Scores</h2>
+      <ol id="high-scores-list"></ol>
+      <div class="button-wrap">
+        <button type="click" id="play-again-button">Play Again</button>
+        <button type="click" id="clear-scores">Clear Scores</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

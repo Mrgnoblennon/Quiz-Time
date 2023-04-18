@@ -1,0 +1,152 @@
+body {
+	background-color: #f9f9f9;
+	font-family: Arial, sans-serif;
+	margin-top: 100px;
+}
+
+#start {
+display: flex;
+justify-content: center;
+align-content: space-between;
+}
+
+#start::after {
+display: none;
+}
+
+#start-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+#quiz {
+display: none; /*change to none*/
+max-width: 600px;
+margin: 0 auto;
+text-align: center;
+}
+
+#quiz-header {
+background-color: #eee;
+padding: 10px;
+border-bottom: 2px solid #ccc;
+}
+
+#quiz-header h1 {
+margin-top: 0;
+}
+
+#quiz-body {
+padding: 20px;
+}
+
+#quiz-body h3 {
+margin-top: 0;
+}
+
+#question {
+height: 40px;
+}
+
+#result {
+height: 30px;
+}
+
+#choices {
+list-style-type: none;
+padding: 0;
+}
+
+.choice {
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+background-color: rgb(118, 19, 118);
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.choice:hover {
+background-color: #bbb;
+}
+
+#quiz-footer {
+background-color: #eee;
+padding: 10px;
+border-top: 2px solid #ccc;
+}
+
+#game-over {
+display: none;
+max-width: 600px;
+margin: 0 auto;
+text-align: center;
+}
+
+#game-over h1 {
+margin-top: 0;
+}
+
+#game-over h2 {
+margin-top: 0;
+}
+
+#play-again-button, #start-button, #clear-scores {
+display: block;
+padding: 10px;
+background-color: #ddd;
+border: none;
+margin: 10px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+#submit-button {
+padding: 10px;
+background-color: #ddd;
+border: none;
+margin: 10px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+#initials {
+background-color: #f7f4f4;
+border-radius: 5px;
+border-color: black;
+
+}
+
+#play-again-button:hover, #start-button:hover, #clear-scores:hover, #submit-button:hover{
+background-color: #bbb;
+}
+
+#high-score {
+display: none;
+align-items: center;
+flex-direction: column;
+}
+
+#high-score ol {
+text-align: center;
+background-color: rgba(158, 30, 167, 0.3);
+height: fit-content;
+width: 220px;
+}
+
+#high-scores-list {
+height: 100px;
+}
+
+.button-wrap {
+display: flex;
+}
+  
