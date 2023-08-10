@@ -1,4 +1,4 @@
-# Assignment 4 - Quiz Game
+# Quiz Game
 
 Utilize JavaScript with HTML and CSS
 
